@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Interactive Resume</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <div>
-                <a href='' class="logo">NZ</a>
+            <div class="header-container">
+                <a href='#' class="logo">NZ</a>
                 <nav>
                     <a href = "#about">Обо мне</a>
                     <a href = "#education">Образование</a>
@@ -20,34 +21,34 @@
             </div>
         </header> 
 
-        <section>
-            <div>
+        <section class="hero">
+            <div class="hero-container">
 
-                <div>
-                    <p>Привет, я</p>
+                <div class="hero-info">
+                    <p class="hero-hello">Привет, я</p>
 
                     <h1>Никита Зинов</h1>
 
                     <h2>Начинающий Web-разработчик</h2>
 
-                    <p>
+                    <p class="hero-description">
                         Изучаю frontend- и backend-разработку, создаю учебные
                         веб-проекты и развиваю навыки работы с современными
                         веб-технологиями.
                     </p>
 
-                    <div>
-                        <a href="#projects">
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button button-primary">
                             Мои проекты
                         </a>
 
-                        <a href="#contacts">
+                        <a href="#contacts" class="button button-secondary">
                             Связаться
                         </a>
                     </div>
                 </div>
 
-                <div>
+                <div class="hero-photo">
                     <img src="images/avatar.jpg" alt="Фотография Никиты Зинова">
                 </div>
 
@@ -58,7 +59,7 @@
             <section id="about">
                 <h2>Обо мне</h2>
 
-                <div>
+                <div class="about-card">
                     <p>
                         Я начинающий web-разработчик. Изучаю frontend- 
                         и backend-разработку, создаю учебные веб-проекты 
@@ -90,8 +91,8 @@
             <section id="skills">
                 <h2>Навыки</h2>
                 
-                <div>
-                    <button>Все</button>
+                <div class="skill-filters">
+                    <button class="active">Все</button>
                     <button>Frontend</button>
                     <button>Backend</button>
                     <button>Programming</button>
@@ -101,7 +102,7 @@
 
                 <input type="text" id="skill-search" placeholder="Поиск навыков...">
 
-                <div>
+                <div class="skill-list">
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>PHP</span>
@@ -114,6 +115,7 @@
                     <span>Git</span>
                 </div>
 
+                <p id="no-results">Ничего не найдено</p>
             </section>
 
             <section id="projects">
