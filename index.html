@@ -92,27 +92,27 @@
                 <h2>Навыки</h2>
                 
                 <div class="skill-filters">
-                    <button class="active">Все</button>
-                    <button>Frontend</button>
-                    <button>Backend</button>
-                    <button>Programming</button>
-                    <button>Database</button>
-                    <button>Tools</button>
+                    <button class="active" data-filter="all">Все</button>
+                    <button data-filter="frontend">Frontend</button>
+                    <button data-filter="backend">Backend</button>
+                    <button data-filter="programming">Programming</button>
+                    <button data-filter="database">Database</button>
+                    <button data-filter="tools">Tools</button>
                 </div>
 
                 <input type="text" id="skill-search" placeholder="Поиск навыков...">
 
                 <div class="skill-list">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>PHP</span>
-                    <span>Go</span>
-                    <span>Java</span>
-                    <span>C++</span>
-                    <span>Python</span>
-                    <span>Assembler</span>
-                    <span>SQL</span>
-                    <span>Git</span>
+                    <span data-category="frontend">HTML</span>
+                    <span data-category="frontend">CSS</span>
+                    <span data-category="backend">PHP</span>
+                    <span data-category="backend">Go</span>
+                    <span data-category="backend">Java</span>
+                    <span data-category="programming">C++</span>
+                    <span data-category="programming">Python</span>
+                    <span data-category="programming">Assembler</span>
+                    <span data-category="database">SQL</span>
+                    <span data-category="tools">Git</span>
                 </div>
 
                 <p id="no-results">Ничего не найдено</p>
@@ -171,5 +171,7 @@
         <footer>
             <p>© 2026 Никита Зинов</p>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
