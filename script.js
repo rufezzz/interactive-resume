@@ -2,6 +2,7 @@ const filterButtons = document.querySelectorAll(".skill-filters button");
 const skills = document.querySelectorAll(".skill-list span");
 const searchInput = document.querySelector("#skill-search");
 const noResults = document.querySelector("#no-results");
+const themeToggle = document.querySelector("#theme-toggle");
 
 let selectedCategory = "all";
 
@@ -59,3 +60,22 @@ filterButtons.forEach(function(button) {
 searchInput.addEventListener("input", function() {
     filterSkills();
 });
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
+}
+
+themeToggle.addEventListener("click", function() {
+
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+
+});
+

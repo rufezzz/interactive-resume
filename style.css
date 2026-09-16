@@ -351,6 +351,101 @@ footer {
     border-top: 1px solid #d5e5f5;
 }
 
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+
+    background-color: #dcecff;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.08);
+}
+
+body.dark-theme {
+    color: #dbeafe;
+
+    background:
+        radial-gradient(circle at 15% 10%, #162a46 0, transparent 30%),
+        radial-gradient(circle at 90% 20%, #17375e 0, transparent 35%),
+        #0d1b2a;
+}
+
+body.dark-theme nav a {
+    color: #dbeafe;
+}
+
+body.dark-theme nav a:hover {
+    color: #69aefc;
+}
+
+body.dark-theme .hero h1,
+body.dark-theme main section h2 {
+    color: #f0f7ff;
+}
+
+body.dark-theme .hero-hello {
+    color: #69aefc;
+}
+
+body.dark-theme .about-card,
+body.dark-theme #education p,
+body.dark-theme #contacts p {
+    background-color: rgba(30, 58, 95, 0.8);
+}
+
+body.dark-theme .skill-filters button {
+    background-color: #1e3a5f;
+    color: #dbeafe;
+}
+
+body.dark-theme .skill-filters button:hover,
+body.dark-theme .skill-filters button.active {
+    background-color: #2f80ed;
+    color: white;
+}
+
+body.dark-theme #skill-search {
+    background-color: #162a46;
+    color: white;
+    border-color: #31577f;
+}
+
+body.dark-theme #skill-search::placeholder {
+    color: #9db1c7;
+}
+
+body.dark-theme .skill-list span {
+    background-color: #1e3a5f;
+}
+
+body.dark-theme article {
+    background-color: rgba(22, 42, 70, 0.9);
+    border-color: #31577f;
+}
+
+body.dark-theme #contacts a {
+    color: #69aefc;
+}
+
+body.dark-theme footer {
+    color: #9db1c7;
+    border-color: #294866;
+}
+
+body.dark-theme .theme-toggle {
+    background-color: #1e3a5f;
+}
+
 @media (max-width: 768px) {
 
     header {
